@@ -1,0 +1,10 @@
+<div>
+    <div class="results">
+        <div class="wrapper">
+            <ngx-masonry [useImagesLoaded]="true">
+                <app-project-card ngxMasonryItem class="masonry-item" *ngFor='let project of projects' [project]="project" (click)="sendProject(project)" >
+                </app-project-card>
+            </ngx-masonry>
+        </div>
+    </div>
+</div>

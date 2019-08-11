@@ -1,0 +1,18 @@
+<!-- <div class="outerWrapper">
+        <div class="innerWrapper">
+            <div class="right">
+            </div>
+            <div class="left">
+                <h3 class="name">{{project.title}}</h3>
+                <div class="description" >
+                </div>
+            </div>
+            <div class="close" (click)="closeModal()" ></div>
+        </div>
+    </div> -->
+
+<h1 mat-dialog-title>{{ data.project.title }}</h1>
+<div mat-dialog-content>
+        <img class="image" [src]="'http://localhost:1337'+data.project.image.url"/>
+        <div class="text" [innerHTML]=" data.project.text | marked"></div>
+</div>
