@@ -9,8 +9,8 @@ import { NgxMasonryModule } from 'ngx-masonry';
 import { NgxImagesloadedModule } from 'ngx-imagesloaded';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-
-
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatSidenavModule, MatListModule, MatIconModule } from "@angular/material";
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -48,7 +48,9 @@ import { ContactComponent } from './components/contact/contact.component'
     NgxMasonryModule,
     NgxImagesloadedModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FlexLayoutModule,
+    MatSidenavModule, MatListModule, MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
